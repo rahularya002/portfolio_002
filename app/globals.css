@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-void: #040406;
+  --color-abyss: #09090d;
+  --color-katana: #ffffff;
+  --color-bone: #e4e4e7;
+  --color-hollow: #18181f;
+  --color-reiatsu: #e11d48;
+  --color-reiatsu-glow: #ff0055;
+  --color-subtle: #71717a;
+  --color-divider: rgba(255, 255, 255, 0.08);
+
+  --font-garganta: 'Montserrat', 'Poppins', sans-serif;
+  --font-bleach: 'Montserrat', 'Poppins', sans-serif;
+  --font-kanji: 'Noto Serif JP', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+
+  --letter-spacing-tite: 0.22em;
+  --letter-spacing-ultra: 0.35em;
+
+  --shadow-blade: 0 0 35px -5px rgba(225, 29, 72, 0.35);
+  --shadow-hollow: 0 10px 40px -10px rgba(0, 0, 0, 0.85);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@layer base {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #040406;
+    color: #e4e4e7;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  ::selection {
+    background-color: #e11d48;
+    color: #ffffff;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Montserrat Display Font */
+.font-garganta {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+}
+
+.font-bleach {
+  font-family: 'Montserrat', 'Poppins', sans-serif;
+  font-weight: 800;
+}
+
+.font-kanji {
+  font-family: 'Noto Serif JP', serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-sans {
+  font-family: 'Inter', sans-serif;
+}
+
+.tracking-tite {
+  letter-spacing: 0.22em;
+}
+
+.tracking-ultra {
+  letter-spacing: 0.35em;
+}
+
+.shadow-blade {
+  box-shadow: 0 0 35px -5px rgba(225, 29, 72, 0.35);
+}
+
+.shadow-hollow {
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.85);
+}
+
+/* Japanese vertical typography watermark */
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* Ambient scanline & grid texture */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+}
+
+@media (max-width: 1023px) {
+  .vertical-text {
+    writing-mode: horizontal-tb;
+    text-orientation: initial;
+  }
 }
