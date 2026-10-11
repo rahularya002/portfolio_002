@@ -121,7 +121,11 @@ export default function HeroSection() {
             <div className="flex flex-wrap items-center gap-3">
               <a
                 href="#projects"
-                className="h-11 px-6 bg-black hover:bg-[#ff0055] text-white font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 shadow-xl flex items-center gap-2 hover:scale-[1.02]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="h-11 px-6 bg-black hover:bg-[#ff0055] text-white font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 shadow-xl flex items-center gap-2 hover:scale-[1.02] cursor-pointer"
               >
                 <span>EXAMINE WORKS</span>
                 <span className="material-symbols-outlined text-[16px]">
@@ -130,7 +134,11 @@ export default function HeroSection() {
               </a>
               <a
                 href="#contact"
-                className="h-11 px-6 bg-transparent hover:bg-black/10 border-2 border-black text-black font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 flex items-center gap-2 hover:scale-[1.02]"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="h-11 px-6 bg-transparent hover:bg-black/10 border-2 border-black text-black font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 flex items-center gap-2 hover:scale-[1.02] cursor-pointer"
               >
                 <span>TRANSMIT MESSAGE</span>
                 <span className="material-symbols-outlined text-[16px]">
@@ -139,9 +147,30 @@ export default function HeroSection() {
               </a>
             </div>
 
-            <div className="flex items-center gap-2 font-mono text-xs text-black font-extrabold">
-              <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
-              <span>India Base • Open for work</span>
+            <div className="flex flex-wrap items-center gap-3 font-mono text-xs text-black font-extrabold">
+              <div className="flex items-center gap-2">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
+                <span>India Base • Open for work</span>
+              </div>
+              <div className="hidden sm:flex items-center gap-2.5 border-l-2 border-black/30 pl-3">
+                <a
+                  href="https://github.com/rahularya002"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[#ff0055] transition-colors underline underline-offset-2"
+                >
+                  GitHub
+                </a>
+                <span className="text-black/40">•</span>
+                <a
+                  href="https://www.linkedin.com/in/ritik-saini-615904235/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-[#ff0055] transition-colors underline underline-offset-2"
+                >
+                  LinkedIn
+                </a>
+              </div>
             </div>
           </div>
         </motion.div>

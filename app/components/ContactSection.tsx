@@ -5,12 +5,25 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   const [copied, setCopied] = useState(false);
-  const email = "ritik.saini.dev@example.com";
+  const email = "ritiksaini852@gmail.com";
+  const githubUrl = "https://github.com/rahularya002";
+  const linkedinUrl = "https://www.linkedin.com/in/ritik-saini-615904235/";
 
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    } catch {
+      const textarea = document.createElement("textarea");
+      textarea.value = email;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2500);
+    }
   };
 
   return (
@@ -74,13 +87,57 @@ export default function ContactSection() {
               role, or just want to chat about engineering and AI, my inbox is
               always open.
             </p>
+
+            {/* DIRECT CHANNELS INTEL STRIP */}
+            <div className="bg-zinc-950 border border-white/15 p-3.5 sm:p-4 font-mono text-xs space-y-2 mt-4 shadow-inner">
+              <div className="flex items-center justify-between border-b border-white/10 pb-1.5">
+                <span className="text-[#ff0055] font-bold tracking-wider">// VERIFIED CHANNELS</span>
+                <span className="text-emerald-400 font-bold flex items-center gap-1.5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
+                  READY TO CONNECT
+                </span>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-[11px] sm:text-xs">
+                <div className="flex items-center gap-2">
+                  <span className="text-zinc-500">EMAIL:</span>
+                  <a
+                    href={`mailto:${email}`}
+                    className="text-white hover:text-[#ff0055] font-bold underline underline-offset-2 transition-colors truncate"
+                  >
+                    {email}
+                  </a>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-zinc-500">GITHUB:</span>
+                  <a
+                    href={githubUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white hover:text-[#ff0055] font-bold underline underline-offset-2 transition-colors truncate"
+                  >
+                    github.com/rahularya002
+                  </a>
+                </div>
+                <div className="flex items-center gap-2 sm:col-span-2">
+                  <span className="text-zinc-500">LINKEDIN:</span>
+                  <a
+                    href={linkedinUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-white hover:text-[#ff0055] font-bold underline underline-offset-2 transition-colors truncate"
+                  >
+                    linkedin.com/in/ritik-saini-615904235
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
-          {/* CONTACT BUTTONS */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 w-full pt-4 border-t border-white/10">
+          {/* CONTACT BUTTONS ROW */}
+          <div className="flex flex-wrap items-center gap-3 w-full pt-4 border-t border-white/10">
             <a
               href={`mailto:${email}`}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-6 bg-[#ff0055] hover:bg-white text-white hover:text-black font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 shadow-blade hover:scale-[1.02]"
+              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 h-12 px-6 bg-[#ff0055] hover:bg-white text-white hover:text-black font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 shadow-blade hover:scale-[1.02]"
             >
               <span className="material-symbols-outlined text-[18px]">mail</span>
               <span>Send an Email</span>
@@ -89,7 +146,7 @@ export default function ContactSection() {
             <button
               type="button"
               onClick={handleCopyEmail}
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-6 bg-white text-black border-2 border-white hover:bg-[#ff0055] hover:text-white font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 cursor-pointer hover:scale-[1.02]"
+              className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 h-12 px-6 bg-white text-black border-2 border-white hover:bg-[#ff0055] hover:text-white font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 cursor-pointer hover:scale-[1.02]"
             >
               <span className="material-symbols-outlined text-[18px]">
                 {copied ? "check" : "content_copy"}
@@ -98,10 +155,22 @@ export default function ContactSection() {
             </button>
 
             <a
-              href="https://github.com"
+              href={linkedinUrl}
               target="_blank"
               rel="noreferrer"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-12 px-6 bg-zinc-900 border border-white/20 hover:border-white text-white font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 hover:scale-[1.02]"
+              className="inline-flex items-center justify-center gap-2 h-12 px-5 bg-[#0077b5] hover:bg-white text-white hover:text-[#0077b5] border border-[#0077b5] font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 hover:scale-[1.02]"
+              title="Connect on LinkedIn"
+            >
+              <span className="material-symbols-outlined text-[18px]">share</span>
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center gap-2 h-12 px-5 bg-zinc-900 border border-white/20 hover:border-white text-white font-garganta text-base font-extrabold tracking-wider uppercase transition-all duration-300 hover:scale-[1.02]"
+              title="Inspect GitHub Repos"
             >
               <span className="material-symbols-outlined text-[18px]">code</span>
               <span>GitHub</span>
@@ -111,7 +180,7 @@ export default function ContactSection() {
           {/* INTEGRATED FOOTER METADATA STRIP */}
           <div className="pt-4 border-t border-white/10 w-full flex flex-col sm:flex-row items-center justify-between text-zinc-400 font-mono text-[11px] gap-2">
             <div>
-              <span className="text-white font-medium">© 2025 Ritik Saini.</span>
+              <span className="text-white font-medium">© 2026 Ritik Saini.</span>
               <span className="text-zinc-500 ml-2 hidden sm:inline">Built with Bleach Intermission Discipline</span>
             </div>
             <span className="text-[#ff0055] font-bold">Response: &lt; 24h</span>

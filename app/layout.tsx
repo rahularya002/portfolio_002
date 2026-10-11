@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Developer Portfolio",
     "Software Architect",
   ],
-  authors: [{ name: "Ritik Saini" }],
+  authors: [{ name: "Ritik Saini", url: "https://github.com/rahularya002" }],
   openGraph: {
     title: "Ritik Saini // Full-Stack Architect",
     description:

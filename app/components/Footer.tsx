@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto px-6 sm:px-10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex flex-col items-center sm:items-start">
           <p className="font-bleach text-xs tracking-wider text-zinc-400 uppercase">
-            © 2025 Ritik Saini. Built with precision & minimalist discipline.
+            © 2026 Ritik Saini. Built with precision & minimalist discipline.
           </p>
           <p className="font-mono text-[10px] text-zinc-600 mt-1">
             Next.js • Tailwind CSS • Clean Architecture • Editorial Edition
@@ -14,7 +14,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center gap-5 font-mono text-xs">
           <a
-            href="https://github.com"
+            href="https://github.com/rahularya002"
             target="_blank"
             rel="noreferrer"
             className="text-zinc-400 hover:text-white transition-colors"
@@ -22,15 +22,15 @@ export default function Footer() {
             Code Repository
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/ritik-saini-615904235/"
             target="_blank"
             rel="noreferrer"
             className="text-zinc-400 hover:text-white transition-colors"
           >
-            Network
+            LinkedIn
           </a>
           <a
-            href="mailto:ritik.saini.dev@example.com"
+            href="mailto:ritiksaini852@gmail.com"
             className="text-zinc-400 hover:text-white transition-colors"
           >
             Email

@@ -7,6 +7,7 @@ import ProjectsSection from "./components/ProjectsSection";
 import AboutSection from "./components/AboutSection";
 import TechStackSection from "./components/TechStackSection";
 import ContactSection from "./components/ContactSection";
+import FloatingNav from "./components/FloatingNav";
 
 export default function Home() {
   const [showLoader, setShowLoader] = useState(true);
@@ -18,6 +19,9 @@ export default function Home() {
         isVisible={showLoader}
         onDismiss={() => setShowLoader(false)}
       />
+
+      {/* Floating navigation dock */}
+      <FloatingNav />
 
       {/* 2. FULL-SCREEN SNAP SCROLL BLEACH INTERMISSION CARDS CONTAINER (NO NAVBARS) */}
       <main className="h-screen w-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth relative z-20 bg-[#040406]">

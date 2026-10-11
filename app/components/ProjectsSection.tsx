@@ -24,36 +24,36 @@ const PROJECTS: Project[] = [
     category: "ai",
     badge: "Full-Stack / AI System",
     badgeType: "gold",
-    title: "RecruitAI / TalentFlow",
+    title: "HireNexus Pro / RecruitAI",
     description:
-      "Recruitment platform connecting agencies, clients, and candidates with automated pipelines, AI candidate matching, and structured interview workflows.",
+      "Enterprise recruitment workflow platform connecting agencies, clients, and candidates with automated pipelines, resume parsing, and AI-driven candidate matching.",
     terminalHeader: "pipeline: screening → matching",
     terminalHeaderStatus: "active",
     metrics: [
-      { label: "Model latency", value: "142ms" },
-      { label: "ATS parsed count", value: "12,450+" },
+      { label: "Live Deployment", value: "hire.enbquantum.com" },
+      { label: "Architecture", value: "Next.js + TypeScript" },
     ],
-    tags: ["Next.js", "TypeScript", "PostgreSQL", "Python", "AI / LLM"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "REST API", "AI Systems"],
+    liveUrl: "https://hire.enbquantum.com",
+    githubUrl: "https://github.com/rahularya002/hire-nexus-pro",
   },
   {
     id: "100x-canvas",
     category: "fullstack",
     badge: "Real-Time Collaboration",
     badgeType: "standard",
-    title: "100XCanvas",
+    title: "100XCanvas / Excalidraw",
     description:
-      "Infinite collaborative whiteboard application inspired by Excalidraw, built with real-time multi-peer sync, canvas rendering, and containerized deployment.",
-    terminalHeader: "websocket: room_204_live",
+      "Infinite collaborative whiteboard application inspired by Excalidraw, built with real-time multi-peer sync, multi-tool drawing, and responsive canvas rendering.",
+    terminalHeader: "websocket: room_live_sync",
     terminalHeaderStatus: "ws:active",
     metrics: [
-      { label: "Frame sync rate", value: "60 FPS" },
-      { label: "Concurrent cursors", value: "< 30ms jitter" },
+      { label: "Frame sync rate", value: "60 FPS Canvas" },
+      { label: "Deployment", value: "Vercel Edge" },
     ],
-    tags: ["Next.js", "WebSockets", "Canvas API", "Docker", "MongoDB"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
+    tags: ["Next.js", "Canvas API", "TypeScript", "Tailwind CSS", "WebSockets"],
+    liveUrl: "https://excalidraw-puce-mu.vercel.app",
+    githubUrl: "https://github.com/rahularya002/excalidraw",
   },
   {
     id: "certificate-engine",
@@ -62,34 +62,34 @@ const PROJECTS: Project[] = [
     badgeType: "standard",
     title: "Certificate Engine",
     description:
-      "Automated high-throughput pipeline for batch generating verified certificates using spreadsheet imports, customizable layers, dynamic QR codes, and PDF streaming.",
-    terminalHeader: "batch: csv_import_chunk",
+      "Automated high-throughput pipeline for batch generating verified certificates using spreadsheet data, customizable template layers, and dynamic QR verification.",
+    terminalHeader: "batch: cert_template_chunk",
     terminalHeaderStatus: "verified",
     metrics: [
-      { label: "Export throughput", value: "1,000 / 4.2s" },
-      { label: "Verification", value: "SHA-256 + QR" },
+      { label: "Rendering Engine", value: "Dynamic Canvas + PDF" },
+      { label: "Verification", value: "QR & Template System" },
     ],
-    tags: ["React", "Node.js", "Express", "PDFKit", "Canvas API"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
+    tags: ["TypeScript", "React", "Node.js", "Canvas API", "Tailwind CSS"],
+    liveUrl: "https://certificate-gen-teal.vercel.app",
+    githubUrl: "https://github.com/rahularya002/certificate-gen",
   },
   {
-    id: "task-suite",
+    id: "triodev",
     category: "fullstack",
-    badge: "Internal SaaS",
-    badgeType: "standard",
-    title: "Task Management Suite",
+    badge: "Creative Studio / Frontend",
+    badgeType: "gold",
+    title: "Triodev Studio",
     description:
-      "Workflow orchestration platform featuring role-based team permissions, real-time message boards, deadline escalation alerts, and sprint velocity analytics.",
-    terminalHeader: "sprint: cycle_14",
-    terminalHeaderStatus: "RBAC strict",
+      "High-craft creative product engineering studio site featuring fluid GSAP kinetic scroll animations, Lenis smooth scrolling, Supabase backend, and modern typography.",
+    terminalHeader: "motion: gsap_lenis_engine",
+    terminalHeaderStatus: "60fps smooth",
     metrics: [
-      { label: "Active listeners", value: "Socket.io rooms" },
-      { label: "Database query", value: "Indexed / <10ms" },
+      { label: "Motion Engine", value: "GSAP + Lenis" },
+      { label: "Backend Integration", value: "Supabase + Resend" },
     ],
-    tags: ["React", "PostgreSQL", "Socket.io", "Express", "Tailwind"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
+    tags: ["Next.js", "GSAP", "Lenis", "Supabase", "TypeScript", "Tailwind CSS"],
+    liveUrl: "https://triodev-mu.vercel.app",
+    githubUrl: "https://github.com/rahularya002/triodev",
   },
   {
     id: "rag-assistant",
@@ -99,33 +99,33 @@ const PROJECTS: Project[] = [
     title: "Product RAG Assistant",
     description:
       "Retrieval-augmented generation interface enabling contextual search and question answering over product catalogs and documentation with local LLMs.",
-    terminalHeader: "embed: text-embedding-3",
+    terminalHeader: "embed: vector_similarity_search",
     terminalHeaderStatus: "ChromaDB",
     metrics: [
-      { label: "Similarity metric", value: "Cosine / k=4" },
-      { label: "Inference provider", value: "Ollama local" },
+      { label: "Inference Engine", value: "Ollama / Local LLM" },
+      { label: "Vector Search", value: "ChromaDB + LangChain" },
     ],
-    tags: ["Next.js", "FastAPI", "Ollama", "ChromaDB", "LangChain"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
+    tags: ["Python", "FastAPI", "Ollama", "ChromaDB", "LangChain"],
+    liveUrl: "https://product-rag-five.vercel.app",
+    githubUrl: "https://github.com/rahularya002/product-rag",
   },
   {
-    id: "vito-x",
+    id: "hashgym",
     category: "tools",
-    badge: "Audio Web App",
+    badge: "Commercial Catalogue / Frontend",
     badgeType: "standard",
-    title: "Vito-X",
+    title: "Hash Gym Catalogue",
     description:
-      "Interactive audio workspace and management suite for composing custom musical soundscapes and managing structured media asset stores in the cloud.",
-    terminalHeader: "stream: web_audio_graph",
-    terminalHeaderStatus: "Supabase",
+      "Commercial fitness equipment showcase and digital catalogue with dynamic enquiry cart builder, instant WhatsApp RFQ quotation routing, and accessible Radix UI components.",
+    terminalHeader: "rfq: whatsapp_cart_bridge",
+    terminalHeaderStatus: "verified",
     metrics: [
-      { label: "Asset codec", value: "Opus / 192kbps" },
-      { label: "Cloud bucket", value: "Signed CDN URLs" },
+      { label: "Catalogue Architecture", value: "Radix UI + TanStack" },
+      { label: "Lead Pipeline", value: "Direct WhatsApp RFQ" },
     ],
-    tags: ["React", "Node.js", "MongoDB", "Supabase", "Web Audio"],
-    liveUrl: "#",
-    githubUrl: "https://github.com",
+    tags: ["TypeScript", "Next.js", "Radix UI", "Tailwind CSS", "TanStack"],
+    liveUrl: "https://hashgym-enquire-catalogue.vercel.app",
+    githubUrl: "https://github.com/rahularya002/hashgym-enquire-catalogue",
   },
 ];
 
@@ -184,57 +184,70 @@ export default function ProjectsSection() {
           transition={{ duration: 0.7, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
           className="lg:col-span-8 xl:col-span-8 bg-black text-white border-2 border-black p-4 sm:p-6 flex flex-col justify-between shadow-[0_20px_50px_rgba(0,0,0,0.4)] overflow-y-auto"
         >
-          {/* Small screen title */}
-          <h2 className="xl:hidden font-garganta text-4xl sm:text-6xl font-black text-white uppercase tracking-wider mb-3">
-            SELECTED PROJECTS
-          </h2>
+          {/* Top Header & Filter Controls Group */}
+          <div>
+            <div className="flex items-center gap-2 text-[#facc15] font-mono text-xs mb-1.5">
+              <span className="w-4 h-[3px] bg-[#facc15]"></span>
+              <span className="tracking-ultra uppercase font-extrabold text-[10px] sm:text-xs">
+                PRODUCTION SYSTEMS & DEPLOYMENTS
+              </span>
+            </div>
 
-          {/* Filter Navigation Tabs */}
-          <div className="flex flex-wrap items-center gap-2 mb-4 border-b border-white/15 pb-3 font-mono text-[11px]">
-            <button
-              type="button"
-              onClick={() => setFilter("all")}
-              className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
-                filter === "all"
-                  ? "bg-[#facc15] text-black scale-105"
-                  : "bg-white/10 text-zinc-300 hover:text-white"
-              }`}
-            >
-              ALL WORKS ({PROJECTS.length})
-            </button>
-            <button
-              type="button"
-              onClick={() => setFilter("ai")}
-              className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
-                filter === "ai"
-                  ? "bg-[#facc15] text-black scale-105"
-                  : "bg-white/10 text-zinc-300 hover:text-white"
-              }`}
-            >
-              AI & RAG
-            </button>
-            <button
-              type="button"
-              onClick={() => setFilter("fullstack")}
-              className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
-                filter === "fullstack"
-                  ? "bg-[#facc15] text-black scale-105"
-                  : "bg-white/10 text-zinc-300 hover:text-white"
-              }`}
-            >
-              FULL-STACK & SAAS
-            </button>
-            <button
-              type="button"
-              onClick={() => setFilter("tools")}
-              className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
-                filter === "tools"
-                  ? "bg-[#facc15] text-black scale-105"
-                  : "bg-white/10 text-zinc-300 hover:text-white"
-              }`}
-            >
-              TOOLS & MEDIA
-            </button>
+            <h2 className="font-garganta text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-none uppercase mb-2">
+              SELECTED <span className="text-[#facc15]">WORKS</span> & REPOSITORIES.
+            </h2>
+
+            <p className="font-sans text-xs sm:text-sm text-zinc-300 leading-relaxed max-w-2xl mb-3">
+              Production web applications, collaborative tools, AI pipelines, and commercial systems engineered for high performance.
+            </p>
+
+            {/* Filter Navigation Tabs */}
+            <div className="flex flex-wrap items-center gap-2 mb-4 border-b border-white/15 pb-3 font-mono text-[11px]">
+              <button
+                type="button"
+                onClick={() => setFilter("all")}
+                className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
+                  filter === "all"
+                    ? "bg-[#facc15] text-black scale-105"
+                    : "bg-white/10 text-zinc-300 hover:text-white"
+                }`}
+              >
+                ALL WORKS ({PROJECTS.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => setFilter("ai")}
+                className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
+                  filter === "ai"
+                    ? "bg-[#facc15] text-black scale-105"
+                    : "bg-white/10 text-zinc-300 hover:text-white"
+                }`}
+              >
+                AI & RAG
+              </button>
+              <button
+                type="button"
+                onClick={() => setFilter("fullstack")}
+                className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
+                  filter === "fullstack"
+                    ? "bg-[#facc15] text-black scale-105"
+                    : "bg-white/10 text-zinc-300 hover:text-white"
+                }`}
+              >
+                FULL-STACK & SAAS
+              </button>
+              <button
+                type="button"
+                onClick={() => setFilter("tools")}
+                className={`px-3 py-1.5 font-bold transition-all duration-200 cursor-pointer ${
+                  filter === "tools"
+                    ? "bg-[#facc15] text-black scale-105"
+                    : "bg-white/10 text-zinc-300 hover:text-white"
+                }`}
+              >
+                TOOLS & MEDIA
+              </button>
+            </div>
           </div>
 
           {/* Project Cards Grid */}
@@ -275,14 +288,37 @@ export default function ProjectsSection() {
                   </p>
                 </div>
 
-                <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between font-mono text-[10px]">
-                  <span className="text-zinc-400">{project.tags[0]} • {project.tags[1]}</span>
+                <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between font-mono text-[11px]">
+                  <div className="flex items-center gap-2.5">
+                    {project.liveUrl && project.liveUrl !== "#" && (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-emerald-400 hover:text-white font-bold flex items-center gap-0.5 transition-colors"
+                        title="Open Live Deployment"
+                      >
+                        <span>Demo</span>
+                        <span className="material-symbols-outlined text-[13px]">open_in_new</span>
+                      </a>
+                    )}
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-zinc-400 hover:text-white font-bold flex items-center gap-0.5 transition-colors"
+                      title="Inspect Source Code"
+                    >
+                      <span>Code</span>
+                      <span className="material-symbols-outlined text-[13px]">code</span>
+                    </a>
+                  </div>
                   <button
                     type="button"
                     onClick={() => setSelectedProject(project)}
-                    className="text-[#facc15] hover:underline font-bold cursor-pointer"
+                    className="text-[#facc15] hover:text-white font-bold cursor-pointer transition-colors"
                   >
-                    Inspect Dossier →
+                    Specs →
                   </button>
                 </div>
               </article>
@@ -360,21 +396,33 @@ export default function ProjectsSection() {
               ))}
             </div>
 
-            <div className="mt-8 flex justify-end gap-3 font-mono text-xs">
+            <div className="mt-8 flex flex-wrap items-center justify-end gap-3 font-mono text-xs">
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                className="px-4 py-2 border border-white/20 text-zinc-400 hover:text-white cursor-pointer"
+                className="px-4 py-2 border border-white/20 text-zinc-400 hover:text-white cursor-pointer transition-colors"
               >
                 CLOSE
               </button>
+              {selectedProject.liveUrl && selectedProject.liveUrl !== "#" && (
+                <a
+                  href={selectedProject.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-4 py-2 bg-emerald-400 text-black font-bold hover:bg-white transition-colors flex items-center gap-1.5"
+                >
+                  <span>LAUNCH LIVE DEMO</span>
+                  <span className="material-symbols-outlined text-[15px]">open_in_new</span>
+                </a>
+              )}
               <a
                 href={selectedProject.githubUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="px-4 py-2 bg-[#facc15] text-black font-bold hover:bg-white transition-colors"
+                className="px-4 py-2 bg-[#facc15] text-black font-bold hover:bg-white transition-colors flex items-center gap-1.5"
               >
-                VIEW SOURCE CODE
+                <span>VIEW SOURCE CODE</span>
+                <span className="material-symbols-outlined text-[15px]">code</span>
               </a>
             </div>
           </div>

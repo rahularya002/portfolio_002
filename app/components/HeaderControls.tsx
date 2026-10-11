@@ -42,7 +42,7 @@ export default function HeaderControls({
       {/* Top Right: Integrated Controls & CTA */}
       <div className="flex items-center gap-3">
         <a
-          href="https://github.com"
+          href="https://github.com/rahularya002"
           target="_blank"
           rel="noreferrer"
           className="w-9 h-9 text-zinc-400 hover:text-white flex items-center justify-center transition-colors"
@@ -51,7 +51,7 @@ export default function HeaderControls({
           <span className="material-symbols-outlined text-[20px]">code</span>
         </a>
         <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/ritik-saini-615904235/"
           target="_blank"
           rel="noreferrer"
           className="w-9 h-9 text-zinc-400 hover:text-white flex items-center justify-center transition-colors"
@@ -73,7 +73,11 @@ export default function HeaderControls({
         {/* High-Contrast Bold Crimson CTA */}
         <a
           href="#contact"
-          className="h-10 px-5 bg-reiatsu hover:bg-white text-white hover:text-black font-garganta text-sm tracking-wider flex items-center gap-1.5 transition-all duration-300 shadow-blade font-bold uppercase ml-1"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          className="h-10 px-5 bg-reiatsu hover:bg-white text-white hover:text-black font-garganta text-sm tracking-wider flex items-center gap-1.5 transition-all duration-300 shadow-blade font-bold uppercase ml-1 cursor-pointer"
         >
           <span>LET'S TALK</span>
           <span className="material-symbols-outlined text-[16px]">
